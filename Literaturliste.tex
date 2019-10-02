@@ -1,6 +1,21 @@
 \documentclass[german,headsepline]{scrartcl}
 \usepackage{beamerarticle}
-\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+		unicode=true,
+		pdfusetitle,
+		bookmarks=true,
+		bookmarksnumbered=false,
+		bookmarksopen=false,
+		breaklinks=false,
+		backref=false,
+		% pdfborder={0 0 0},
+    pdfborderstyle={/S/U/W 0.2}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=blue        % color of external links
+}
 \usepackage{geometry}
 \geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
 \setcounter{secnumdepth}{0}
@@ -46,12 +61,11 @@
 \title{Literatur und Links}
 \author{Sven Koesling}
 \institute{ETH--Bibliothek}
-\date{Herbst 2015}
+\date{Herbst 2017}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \includeonly{ 20151204 20151211 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 {\renewcommand\labelitemi{}
@@ -69,13 +83,14 @@
   \item Abdelhamid, Rames:\\
     \href{http://www.library.ethz.ch/DADS:default_scope:ebi01_prod001553956}{\it Das Vieweg-LATEX2e-Buch : Eine Praxisorientierte Einführung}\\
     3., Vollst. überarb. Und Erw. Aufl. ed. Braunschweig [etc.: Vieweg, 1996. Print. Studium Und Ausbildung.
+  \item Wüst, Karl, Gervais, Arthur:\\
+    \href{https://eprint.iacr.org/2017/375.pdf}{Do you need a Blockchain?}
 \end{itemize}
 
 \subsection{Links}
 \begin{itemize}
   \item \href{http://actu.epfl.ch/news/the-matterhorn-like-you-ve-never-seen-it/}{The Matterhorn like you've never seen it}
-  \item \href{http://www.nmc.org/publication/nmc-horizon-report-2015-library-edition/}{Horizon Report 2015 Library Edition}
-  \item \href{http://blogs.ethz.ch/innovethbib/2015/08/24/horizon-report-2015-library-edition/}{Innovationsblog der ETH-Bibliothek: Horizon Report 2015 Library Edition}
+  \item \href{https://www.nmc.org/publication/nmc-horizon-report-2017-library-edition/}{Horizon Report 2017 Library Edition}
   \item \href{https://www.youtube.com/watch?v=HgmETqWeFrs}{NEBIS-Verbundtagung/Assemblée annuelle 2015: Keynote Magnus Pfeffer: Cloud Computing}
 \end{itemize}
 

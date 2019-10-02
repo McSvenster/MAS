@@ -1,0 +1,1470 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\use_default_options true
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Grundlagen: Informationstechnologie in Bibliotheken
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Grundlagen: Informationstechnologie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Sven Koesling
+\end_layout
+
+\begin_layout Institute
+ETH–Bibliothek
+\end_layout
+
+\begin_layout Date
+Herbst 2017
+\end_layout
+
+\begin_layout Section*
+Kursus / Übersicht
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+label=uebersicht
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
+Kursus / Übersicht
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+01.12.2017 : Von Nullen und Einsen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vorstellung und Überblick
+\end_layout
+
+\begin_layout Itemize
+Die Entwicklung des Internets
+\end_layout
+
+\begin_layout Itemize
+Server: Was ist das eigentlich?
+\end_layout
+
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+15.12.2017 : Internettechnologien I, Datenbanktechnologien I
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+IntT I: Dokumentformen, Skriptsprachen, Ajax, responsive Web
+\end_layout
+
+\begin_layout Itemize
+DBT I: Datenbanktypen, Technologien, Einstieg SQL
+\end_layout
+
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+22.12.2017 : Internettechnologien II:von interaktiven Webseiten zu WebApps
+ in der Cloud
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Der Einsatz von JavaScript Frameworks anhand von Primos neuem UI
+\end_layout
+
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+19.01.2018 : Datenbanktechnologien II: BigData
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Begriffsklärung
+\end_layout
+
+\begin_layout Itemize
+Anwendungsszenarien, Anwendung in der ETH
+\end_layout
+
+\begin_layout Itemize
+In Medias Res: BigData am Bsp.
+ Logfiles, DataScience am Bsp.
+ Benutzerdaten
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+Internettechnologien I
+\end_layout
+
+\begin_layout Subsection*
+Dokumentformen
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+presentation
+\end_layout
+
+\end_inset
+
+Dokumentformen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Dokumentformen} 
+\backslash
+begin{itemize} 
+\backslash
+item Warum nicht Word? 
+\backslash
+item html 
+\backslash
+item pdf 
+\backslash
+end{itemize} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+subsection{Warum nicht Word?} 
+\backslash
+only<article>{ Das Web ist eine unvorstellbar große Sammlung von Dokumenten.
+ Wenn man also im Internet surft, guckt man sich Dokumente an, die auf anderen
+ Rechnern liegen.
+ Nun haben doch alle Word 
+\backslash
+textendash{} warum also ein weiteres Format (html)? Es gibt dazu viele Argumente
+: } 
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{1.
+ Dokumentgrößen} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=6cm]{pics/Finder.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{die Dokumentauszeichnung am Beispiel ``Pages''} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[height=6cm]{pics/auszeichnung.png} (noch 12 mal soviel
+\backslash
+ldots) 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{der Dokumentinhalt am Beispiel ``Pages''} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[height=6cm]{pics/der_eigentliche_text.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+only<article>{ Bei der Übertragung über das Netz ist die Datei--Größe trotz
+ ``dicker Leitungen'' nach wie vor entscheidend: Ein Word- Dokument mit
+ dem gleichen Inhalt ist sieben mal (Word97-2003) bzw.
+ dreimal (Word2007) grösser, als eine html-Datei gleichen Inhalts.
+ html ist ein Format, das sehr schlank ist und schnell übertragen werden
+ kann.
+ }
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{2.
+ frei verfügbares Format} Ein proprietäres Format wie .doc wird laufend verändert
+, wobei diese Veränderungen nicht dokumentiert werden.
+ Wer das Dokument lesen will, muss die Software zum Lesen kaufen (können
+\backslash
+ldots).
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+includegraphics[height=3cm]{pics/pages-2011} 
+\backslash
+hfill 
+\backslash
+includegraphics[height=3cm]{pics/pages-2013} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+only<article>{ Webseiten sollten aber von jedem weltweit betrachtet werden
+ können.
+ 
+\end_layout
+
+\begin_layout Frame
+Ein weiterer Unterschied: Dokumente von Textverarbeitungen sind dafür gemacht,
+ dass man sie leicht editieren kann.
+ html- Dokumente dagegen sollen nach ihrer Erzeugung zunächst mal nur angezeigt,
+ aber nicht bearbeitet werden.
+ 
+\end_layout
+
+\begin_layout Frame
+Der Webbrowser schickt dazu eine Anfrage an den Server ``Reich mir mal die
+ Seite /dokument.html rüber!''.
+ Wenn die Seite vorhanden ist, gibt der Server sie heraus, sonst wird eine
+ Fehlermeldung angezeigt.
+ Der Webbrowserrückt die Seite raus, der Browser zeigt die Seite an - sobald
+ man aber weiter surft, ist sie schon wieder vergessen (grundsätzlich
+\backslash
+ldots{} Browser speichern heute Seiten in einem sogenannten Cache, damit
+ sie beim nächsten Aufruf schneller kommen.).
+ Bearbeiten kann man die Seite nicht.
+ Mit speziellen Tools lässt sich der empfangene Code natürlich editieren,
+ dann aber nur auf dem eigenen Rechner betrachten.
+ Der Server wird es nicht erlauben, dass jeder einfach seine Änderungen
+ auf ihm abspeichert.
+\end_layout
+
+\begin_layout Frame
+Und schliesslich gibt es für für Textverarbeitungen fest definierte Dokumentgröß
+en (A4 z.B.), Webseiten müssen aber auf den unterschiedlichsten Monitorgrößen
+ angezeigt werden.
+ Das bedeutet, dass z.B.
+ Zeilenumbrüche flexibel sein müssen.
+ }
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+subsection{html} 
+\backslash
+only<article>{ html ist zunächst einmal keine Programmiersprache.
+ Man kann keinen Rechner damit füttern und ihm das Ergebnis von $2 + 2$
+ entlocken.
+ 
+\end_layout
+
+\begin_layout Frame
+html ist eine Auszeichnungssprache, die dazu dient, Inhalt zu formatieren.
+ Dazu versieht der Programmierer den strukturierten Inhalt mit Tags ---
+ eines zum Anfang und eines zum Ende des jeweiligen Bereichs.
+ So kennzeichnen beispielsweise 
+\backslash
+lstinline{<p> </p>} einen Absatz.
+ Zwischen den Tags steht dann der Inhalt.
+ } 
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{eine einfache Seite} 
+\backslash
+begin{lstlisting} <html> <head> <title>Der Hase und der Baum</title> </head>
+ <body> <h1>Der Hase und der Baum</h1> <h2>Kapitel 1: Der Hase</h2> <p>Meister
+ Lampe hoppelt über ein Feld.</p> <h2>Kapitel2: In der Werkstatt</h2> <p>Herr
+ K.
+ bestellt eine Knautschzone.</p> </body> </html> 
+\backslash
+end{lstlisting} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{
+\backslash
+ldots sieht so aus:} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/testseite.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{
+\backslash
+ldots mit Umlauten:} 
+\backslash
+begin{lstlisting} <html> <head> <meta charset="utf-8" /> <title>Der Hase
+ und der Baum</title> </head> <body> <h1>Der Hase und der Baum</h1> <h2>Kapitel
+ 1: Der Hase</h2> <p>Meister Lampe hoppelt über ein Feld.</p> <h2>Kapitel2:
+ In der Werkstatt</h2> <p>Herr K.
+ bestellt eine Knautschzone.</p> </body> </html> 
+\backslash
+end{lstlisting} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{
+\backslash
+ldots sieht so aus:} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/testseite-utf8.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+only<article>{ 
+\backslash
+pagebreak }
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{So soll es sein:} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.4
+\backslash
+textwidth]{pics/testseite-gut.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{So soll es nicht sein!} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.4
+\backslash
+textwidth]{pics/testseite-feste_breite.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+subsection{pdf} 
+\backslash
+only<article>{ Wenn man ein Dokument mit festem Layout veröffentlichen möchte,
+ bietet sich PDF an.
+ Es ist frei verfügbar, kann also von jedem gelesen werden, und sieht immer
+ gleich aus.
+ Wie auch Webseiten lässt es sich (eigentlich) nicht vom Empfänger verändern.
+ }
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Wieder die Dokumentgrösse:} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.6
+\backslash
+textwidth]{pics/copy-paste.png}
+\end_layout
+
+\begin_layout Frame
+als Bild: 72.2 kB (72'224 Bytes)
+\backslash
+
+\backslash
+ als PDF: 35.9 kB (35'880 Bytes) 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Fazit: Welche Form wofür?} 
+\backslash
+textbf{Textverarbeitung:} Alles zum Weiterverarbeiten
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+textbf{html:} Inhalt geht über Form
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+textbf{PDF:} Form soll erhalten bleiben 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{alles Quatsch?} 
+\backslash
+begin{theorem} Im Web liest doch niemand mehr.
+ Da sollte man nur knappe Infos unterbringen.
+ 
+\backslash
+end{theorem} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+section{Exkurs: stateless} 
+\backslash
+only<article>{ Ein Problem bei der Entwicklung von Web--Apps war, dass ein
+ Webserver eigentlich nichts vom User weiss.
+ Er liefert die geforderte Webseite aus und hat dann den User schon wieder
+ ``vergessen''.
+ } 
+\backslash
+begin{frame} 
+\backslash
+frametitle{http is stateless} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/whatsyournameagain} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+begin{quote} HTTP is a stateless protocol.
+ A stateless protocol does not require the server to retain information
+ or status about each user for the duration of multiple requests.
+\end_layout
+
+\begin_layout Frame
+But some web applications may have to track the user's progress from page
+ to page, for example when a web server is required to customize the content
+ of a web page for a user.
+ Solutions for these cases include: 
+\backslash
+begin{itemize} 
+\backslash
+item the use of HTTP cookies.
+ 
+\backslash
+item server side sessions, 
+\backslash
+item hidden variables (when the current page contains a form), and 
+\backslash
+item URL-rewriting using URI-encoded parameters, e.g., 
+\backslash
+lstinline{/index.php?session_id=some_unique_session_code}.
+ 
+\backslash
+end{itemize} 
+\backslash
+hfill(wikipedia) 
+\backslash
+end{quote} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+only<article>{ Um das zu ändern gibt es verschiedene Techniken wie z.B.
+ Cookies und Sessions.
+ Dabei handelt die Web--App einen eindeutigen Identifier aus und kann so
+ wiederkehrende User identifizieren.
+ ``Dank'' der Werbeindustrie wurden diese Techniken so weit optimiert, dass
+ wir im Internet gläsern sind.
+ Man kann feststellen, woher wir kommen, welche Seiten wir gesehen haben,
+ welche wir wegklicken, wie lange wir wo verweilt haben und, und, und.
+ }
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{privacy?} 
+\backslash
+begin{quote} You have zero privacy anyway.
+ Get over it.
+ 
+\backslash
+hfill(Scott McNealy, Sun Microsystems, 1999) 
+\backslash
+end{quote} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Subsection*
+Skriptsprachen
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]{pics/scriptsprachen-logos} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+only<article>{ Wärend man mit Auszeichnungssprachen wie z.B.
+ html oder 
+\backslash
+LaTeX
+\backslash
+ Dokumente formatiert, dienen Skriptsprachen wie Perl, Ruby oder Javascript
+ dazu, einfache, wiederkehrende Aufgaben am Computer zu übernehmen.
+\end_layout
+
+\begin_layout Standard
+Beim Publishing von Aleph erhalten wir beispielsweise unzählige komprimierte
+ Dateien, die ihrerseits unzählige XML-Dateien enthalten.
+ Jede dieser XML-Dateien enthält einen Datensatz.
+ }
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Das erste Programm} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/dasersteprogramm.png} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Ein Programm} Das folgende Skript (Auszug) dient zum Durchsuchen
+ von tar-files: 
+\backslash
+begin{lstlisting} Dir.entries("./").each do |tarname| if tarname =~ /tar
+\backslash
+.gz$/ tarinhalt = %x(tar -tzf #{tarname}) tarinhalt.each_line do |dateiname|
+ dateiname.chomp! if dateiname =~ /#{suchstring}/ puts "#{suchstring} kommt
+ in #{dateiname} im Archiv #{tarname} vor"
+\end_layout
+
+\begin_layout Standard
+puts "Soll die Datei extrahiert werden: j/N" antwort = gets 
+\backslash
+end{lstlisting}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+ldots 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+subsection{serverseitige Skriptsprachen} 
+\backslash
+only<article>{ Die Einteilung in server--- und clientseitige Skriptsprachen
+ ist ein bisschen willkürlich, macht aber bestimmte Konzepte gut deutlich.
+ Grundsätzlich könnten alle Skriptsprachen sowohl auf dem Client als auch
+ auf dem Server vorhanden sein.
+\end_layout
+
+\begin_layout Standard
+Hier soll es aber darum gehen, dass --- je nachdem, auf welcher Seite das
+ Skript läuft --- bestimmte Funktionen möglich sind, andere eben nicht.
+ } 
+\backslash
+subsection{clientseitige Skriptsprachen} 
+\backslash
+only<article>{ dienen dazu, mit dem Server zu kommunizieren, Funktionen
+ auf dem Client auszuführen, die Webseite beim User zu manipulieren } 
+\backslash
+subsection{regular Expressions}
+\end_layout
+
+\begin_layout Subsection*
+Blogsystem am Beispiel jekyll
+\end_layout
+
+\begin_layout Section*
+Datenbanktechnologien I
+\end_layout
+
+\begin_layout Subsection*
+Hintergrund
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
++-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Warum Datenbanken?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Speicherplatz
+\end_layout
+
+\begin_layout Itemize
+gleichzeitiger Zugriff durch viele Nutzer
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+Da Speicher früher sehr teuer war, entwickelte man Strategien, um Speicherplatz
+ zu sparen.
+ Ein gutes Beispiel sind Normalisierungen bei relationalen Datenbanken.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+relationale Datenbanken
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+ Nehmen wir zur Verdeutlichung eine Versicherung, die die Adressen ihrer
+ Kunden in einer Datenbank speichern möchte.
+ Es wird eine grosse Tabelle angelegt, je eine Zeile pro Kunde.
+ Dabei stellt sich heraus, dass die Versicherung 1000 Kunden hat, die in
+ der Hauptstrasse wohnen.
+ Das bedeutet, dass wir 1000 Mal den Speicherplatz für das Wort ``Hauptstrasse''
+ benötigen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Eine Kundentabelle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\backslash
+begin{center} 
+\backslash
+begin{tabular}{lllll} id & Nachname & Vorname & Strasse & Stadt
+\backslash
+
+\backslash
+ 
+\backslash
+hline 1 & Muster & Hans & Hauptstrasse & Zürich
+\backslash
+
+\backslash
+ 2 & Meier & Heinrich & Hauptstrasse & Zürich
+\backslash
+
+\backslash
+ 3 & Müller & Hubert & Hauptstrasse & Zürich
+\backslash
+
+\backslash
+ 4 & Schulze & Herbert & Hauptstrasse & Zürich
+\backslash
+
+\backslash
+ 
+\backslash
+end{tabular} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Only
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+article
+\end_layout
+
+\end_inset
+
+Wenn man nun die Strassen in eine extra Tabelle schreibt, eine Zeile pro
+ Strasse, dann muss man in der Tabelle der Kunden nur die ID der Strasse
+ hinterlegen.
+ Wenn die Hauptstrasse z.B.
+ die ID 1 hat, dann benötigen wir nur noch 1000 Mail den Speicherplatz für
+ den Integer 1 --- wesentlich weniger, als für den String ``Hauptstrasse''.
+ Analog kann man z.B.
+ auch mit Städten verfahren.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Tabelle der Strassen} 
+\backslash
+begin{center} 
+\backslash
+begin{tabular}{ll} id & Strasse
+\backslash
+
+\backslash
+ 
+\backslash
+hline 1 & Hauptstrasse
+\backslash
+
+\backslash
+ 2 & Nebenstrasse
+\backslash
+
+\backslash
+ 3 & Seitenstrasse
+\backslash
+
+\backslash
+ 
+\backslash
+end{tabular} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Tabelle der Städte} 
+\backslash
+begin{center} 
+\backslash
+begin{tabular}{ll} id & Stadt
+\backslash
+
+\backslash
+ 
+\backslash
+hline 1 & Zürich
+\backslash
+
+\backslash
+ 2 & Basel
+\backslash
+
+\backslash
+ 3 & Bern
+\backslash
+
+\backslash
+ 
+\backslash
+end{tabular} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Tabelle mit Relationen} 
+\backslash
+begin{center} 
+\backslash
+begin{tabular}{lllcc} id & Nachname & Vorname & Strassen
+\backslash
+_ID & Stadt
+\backslash
+_ID
+\backslash
+
+\backslash
+ 
+\backslash
+hline 1 & Muster & Hans & 1 & 1
+\backslash
+
+\backslash
+ 2 & Meier & Heinrich & 1 & 1
+\backslash
+
+\backslash
+ 3 & Müller & Hubert & 1 & 1
+\backslash
+
+\backslash
+ 4 & Schulze & Herbert & 1 & 1
+\backslash
+
+\backslash
+ 
+\backslash
+end{tabular} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{Speicherplatzbedarf} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/speicherplatzbedarf} 
+\backslash
+end{center} 
+\backslash
+end{frame} 
+\backslash
+only<article>{ Eine relationale Datenbank dahingehend zu optimieren, dass
+ es möglichst wenig Redundanzen gibt, nennt man ``normalisieren''.
+ Es gibt fünf Normalformen, und für die Datenbank--Spezialisten war es eine
+ komplexe Aufgabe, Daten optimal zu normalisieren.
+ Die Normalisierung hat auch Nachteile.
+ So liegen nicht alle Informationen in einer Tabelle, was Abfragen komplexer
+ macht.
+ Damit einher geht ein höherer Leistungsbedarf des Servers.
+ }
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle<beamer>{Relationen in der DB von Aleph} 
+\backslash
+begin{figure} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.4
+\backslash
+textwidth]{pics/alephtables} 
+\backslash
+only<article>{
+\backslash
+caption{Relationen in der DB von Aleph}} 
+\backslash
+end{center} 
+\backslash
+end{figure} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Felder nicht atomar} 
+\backslash
+begin{lstlisting} select substr(z103_rec_key,6,9) || 'EHO60' from eho60.z103
+ where substr(z103_lkr_text_n,1,3) = 'E04' and z103_lkr_library = 'EBI01'
+ and substr(z103_rec_key,1,5) = 'EHO60' ; 
+\backslash
+end{lstlisting} 
+\backslash
+end{frame} 
+\backslash
+only<article>{ Ein Nachteil von relationalen Datenbanken ist die feste Grösse
+ und Anzahl von Feldern.
+ Wenn ich beispielsweise für die Tabelle der Kunden die Spalten 
+\backslash
+begin{tabular}{rrrrrr} Vorname & Nachname & Strasse & Hausnummer & Postleitzahl
+ & Ort
+\backslash
+
+\backslash
+ 
+\backslash
+end{tabular} festgelegt habe, und die Versicherung sich entscheidet, ein
+ internationales Geschäft aufzubauen, ist es einiger Aufwand, die Spalte
+ ``Land'' hinzu zu fügen.
+ }
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{feste Grösse} Das Feld für Inventarnummern darf in Aleph nicht
+ mehr als 20 Zeichen haben.
+ 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{und wieder: Kodierung von Text} 
+\backslash
+begin{quote} UTF8-Codierungszeichen zaehlen einzeln, auch wenn daraus ein
+ einziges Unicode-Zeichen entsteht.
+ 
+\end_layout
+
+\begin_layout Standard
+Ein Beispiel dafuer ist das ``Ä'', das im Inventarnummernfeld zwei VARCHAR2
+ Zeichen aufbraucht, weil es aus 0xc3 und 0x84 besteht.
+ 
+\end_layout
+
+\begin_layout Standard
+Ich habe nicht geschaut, ob es noch weitere solche Fälle gibt.
+ 
+\backslash
+hfill{[Mathias Weyland]} 
+\backslash
+end{quote} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+subsection{dokumentorientierte Datenbanken} 
+\backslash
+begin{frame} 
+\backslash
+frametitle<beamer>{dokumentorientierte Datenbanken} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/doc1} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{ein weiteres Dokument in derselben collection} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/doc2} 
+\backslash
+end{center} 
+\backslash
+end{frame} 
+\backslash
+begin{frame} 
+\backslash
+frametitle{noch ein Dokument in derselben collection} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/doc3} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+frametitle{und noch ein weiteres Dokument in derselben collection} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/doc4} 
+\backslash
+end{center} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+subsection{Abstraktion}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+subsection{Indexer} 
+\backslash
+begin{frame} 
+\backslash
+begin{figure} 
+\backslash
+caption{Suche nach ``Landquart'' in einem aktuellen Bibliothekskatalog (420.000
+ Dokumente): 1072 Treffer -- ohne Facetten: completed in 2845ms} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/aleph} 
+\backslash
+end{center} 
+\backslash
+end{figure} 
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{frame} 
+\backslash
+begin{figure} 
+\backslash
+caption{Die gleiche Suche mit einem Indexer: 1.700 Treffer mit drei Facetten:
+ completed in 792ms} 
+\backslash
+begin{center} 
+\backslash
+includegraphics[width=0.8
+\backslash
+textwidth]{pics/Ergebnis} 
+\backslash
+end{center} 
+\backslash
+end{figure} 
+\backslash
+end{frame}
+\end_layout
+
+\end_body
+\end_document
