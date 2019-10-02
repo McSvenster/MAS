@@ -1,0 +1,83 @@
+\documentclass[german,headsepline]{scrartcl}
+\usepackage{fontspec}
+%\setmainfont{Garamond}
+\usepackage[german]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
+\setcounter{secnumdepth}{0}
+\setlength{\parskip}{\bigskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{babel}
+\usepackage{graphics}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\usepackage{multicol}
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{url}
+\usepackage{listings} 
+\usepackage{courier}
+\usepackage{array}
+\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\footnotesize\ttfamily}
+\lstset{literate=%
+{Ö}{{\"O}}1
+{Ä}{{\"A}}1
+{Ü}{{\"U}}1
+{ß}{{\ss}}2
+{ü}{{\"u}}1
+{ä}{{\"a}}1
+{ö}{{\"o}}1
+}
+
+
+\usepackage[manualmark,headsepline]{scrpage2}
+\lohead{\textbf{THEMA}\\\textbf{Bewertung Postersession}}
+\ohead{\@author\\\@date}
+\headheight4cm
+\pagestyle{scrheadings}
+\addtokomafont{sectioning}{\rmfamily} %auch Ueberschriften in Serifenschrift
+\addtokomafont{descriptionlabel}{\rmfamily}
+
+%---------------------------------------------------------------------------
+% Fonts
+\usepackage{textcomp}
+\let\stdsection\section
+% \renewcommand\section{\newpage\stdsection}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{IT Grundlagen}
+\author{Sven Koesling}
+% \institute{ETH--Bibliothek}
+\date{Frühjahr 2016}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{enumerate}
+  \item Beantwortung der Fragen (60\%)
+  \item Kreativität und Entwicklung einer eigenen Idee (20\%)
+  \item Postersession (20\%)
+  \begin{itemize}
+    \item Präsentation
+    \item Qualität des Posters
+  \end{itemize}
+\end{enumerate}
+  
+\section{Beantwortung der Fragen (60\%)}
+\subsection{}
+\subsection{}
+\subsection{}
+
+\section{Kreativität und Entwicklung einer eigenen Idee (20\%)}
+
+\section{Postersession (20\%)}
+\subsection{Präsentation}
+\subsection{Qualität des Posters}
+
+\end{document}

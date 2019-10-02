@@ -1,0 +1,199 @@
+\documentclass[german,headsepline]{scrartcl}
+\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
+\setcounter{secnumdepth}{0}
+\setlength{\parskip}{\bigskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage[manualmark,headsepline]{scrpage2}
+\headheight4cm
+\pagestyle{scrheadings}
+\addtokomafont{sectioning}{\rmfamily} %auch Ueberschriften in Serifenschrift
+\addtokomafont{descriptionlabel}{\rmfamily}
+\usepackage{textcomp}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\makeatother
+\makeatletter
+\lohead{\@title}
+\ohead{\@author, \@date}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{courier}
+\usepackage{multicol}
+\usepackage{listings}
+\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\footnotesize\ttfamily}
+\lstset{literate=%
+{Ö}{{\"O}}1
+{Ä}{{\"A}}1
+{Ü}{{\"U}}1
+{ß}{{\ss}}2
+{ä}{{\"a}}1
+{ö}{{\"o}}1
+{ü}{{\"u}}1
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Vom Eigenleben der Workarounds}
+\subtitle{Anekdote aus IT--Sicht}
+\author{Sven Koesling}
+\date{Herbst 2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+Die Fachabteilung ``Katalog'' ist über ein Problem gestolpert. Wieso werden die Seitenzahlen im Katalog immer nur mit einem ``P.'' bezeichnet? Wenn es schon immer mehrere Seiten sind, sollte doch ein Plural--S dranhängen.
+
+Das schreit nach einem Projekt. 
+
+Zunächst wird eine projektbezogene Sharepoint-Seite aufgeschaltet, in der die komplette kommende Projektdokumentation abgelegt werden kann, dann wird Projektteam einberufen, das umgehend in einem KickOff die Requirements formuliert: ``Es muss ein Plural--S her''.
+
+Bei der IT dauert so etwas ja immer ewig --- wir brauchen eine praktikable und unkomplizierte Lösung. Schnell kommt man auf eine einfach umzusetzende Idee: Das Feld für die Katalogisierung der Seitenzahlen steht immer links oben auf dem Bildschirm. Es hat einen Abstand von 5,34 cm zur Oberkante des Bildschirms und zur linken einen Abstand von 8,16 cm. Man beschliesst, das S auf den Monitoren aufzubringen. 
+
+Erste Fragen kommen auf:
+
+\begin{itemize}
+  \item ``Wie stellen wir sicher, dass alle Monitore gleich optimiert werden?''
+  \item ``Dürfen wir die Monitore so verändern?''
+  \item ``Wer darf das Entscheiden?''
+\end{itemize}
+
+Es wird ein Change-Board ``Monitore'' gegründet, dass sich mit der strategischen Weiterentwicklung der Bildschrime beschäftigt. Das Changeboard beschliesst, dass alle Anpassungen an Bildschirmen einheitlich gemacht werden müssen. Dieser Auftrag geht zurück an das Projektteam. 
+
+Auch hier findet das Projektteam eine Lösung: Damit das S bei allen Arbeitsplätzen einheitlich umgesetzt wird, werden Display--Folien eingekauft und an der richtigen Stelle mit dem S bedruckt. Dieser Vorschlag wird vom Change-Board abgenickt und die Folien umgehend bestellt, denn inzwischen sind fünf Monate vergangen, und man möchte vor Weihnachten fertig werden.
+
+Endlich sind die Folien da. Eine findige Kollegin, die Erfahrung mit Word hat, übernimmt die Aufgabe, das S an die richtige Stelle zu drucken. Nachdem man das auf weissem Papier geprobt hat, kommt der grosse Moment. Die Folien werden in den Drucker gelegt und der Druckauftrag abgeschickt. Der Drucker verabschiedet sich mit einem Papierstau. Typisch, immer wenn man ihn braucht. Wahrscheinlich haben die IT-Fuzzis wieder irgendetwas aktualisiert. Wenigstens kommen sie zügig, wenn man anruft. 
+
+``Die Folien müssen heute noch fertig werden --- wir haben für morgen 
+vier Studenten angestellt, die sie anbringen sollen.''
+
+Der IT-Supporter schüttelt nach einem Blick auf die Verpackung der Folien den Kopf: 
+
+``Das wird wohl nichts. Die Folien passen nicht und\ldots''
+
+Weiter kommt er nicht. 
+
+``Was soll das heissen 'passen nicht'? Die wurden in einem genormten Auswahlverfahren evaluiert und vom Change-Board genehmigt, die sind genau richtig für die Monitore!''
+
+``Ja, das glaube ich schon, aber sie passen nicht in den Drucker.''
+
+``Na dafür braucht es keinen Informatiker, das haben wir auch gesehen, dehalb haben wir sie ja auch gefaltet.''
+
+``Aber gefaltet kann sie der Drucker nicht einziehen. Ausserdem sind die Folien für einen Tintenstrahldrucker, nicht für einen Laserdrucker.''
+
+``Typisch, kaum kommt IT ins Spiel, wird alles immer verkompliziert\ldots\ und ausgebremst. Dann müssen wir eben einen Tintendrucker anschaffen, wenn der Laser nicht alle Anforderungen erfüllt. Aber was machen wir bis morgen?''
+
+Man entschliesst sich, die Folien von den studentischen Hilfskräften auf die passende Grösse für den Drucker zurecht schneiden zu lassen, damit die nicht umsonst kommen. Ein Tintenstrahldrucker wird bestellt, das S perfekt an die richtige Stelle auf die Folien gedruckt (sicherheitshalber hat man die IT nicht weiter damit behelligt, damit der Vorgang schlank bleibt\ldots) und über das Wochenende die Monitpre damit beklebt.
+
+Am folgenden Montag klingeln in der IT die Telefone Sturm: Die Rahmen des Katalogisierungsclients lassen sich rechts nicht mehr mit der Maus greifen und ziehen, um das Fenster zu maximieren. Aus irgendeinem Grund wird der rechte Fensterrahmen unscharf dargestellt.
+
+Der Supporter, der sich die Sache vor Ort ansieht, kommt halb lachend, halb weinend zurück ins IT--Büro:
+
+``Wisst Ihr, was die gemacht haben?!? Die haben A4-Displayfolien auf die 21” Monitore geklebt und wundern sich, dass es im rechten Drittel jetzt einen Rand gibt...''
+
+Ein typisches Supportgespräch zu diesem Fall läuft in etwa so ab: 
+
+``Ich kann mit der Maus den Fensterrahmen nicht greifen.''
+
+``Wir wissen von dem Problem. Vergrössern Sie doch bitte das Fenster, indem Sie auf den Knopf zum Maximieren klicken.''
+
+``\ldots hmmm Knopf zum Maximieren, OK, wo ist der?''
+
+``Sie sehen rechts oben am Fenster drei Icons, unter anderem das Kreuz, mit dem Sie Fenster schliessen.''
+
+``Nein, sowas habe ich nicht.''
+
+``Oh, na so etwas, mit welchem Betriebssystem arbeiten Sie?''
+
+``Betriebssystem? Keine Ahnung, ist ein normaler Computer.''
+
+``OK, versuchen wir es anders. Würden Sie bitte mal den IE öffnen?''
+
+``OK, und nun?''
+
+``Prima, dann haben Sie Windows. Wenn Sie den IE nun wieder schliessen wollen, wie machen Sie das?''
+
+``Na, ich klicke rechts oben auf das Kreuz!''
+
+``Jaaa\ldots''
+
+``Soll ich das jetzt machen?''
+
+``Bitteschön''
+
+``OK, und nun?''
+
+``Haben Sie jetzt wieder das Katalogisierungsfenster vor sich?''
+
+``Ja.''
+
+``Und rechts oben kein Kreuz?''
+
+``Aaach das meinen Sie! Und damit vergrössere ich das Fenster? Sekunde ich versuchs\ldots''
+
+``Halt!''
+
+``Oh, war ich zu schnell? Das Fenster ist weg.''
+
+``Kann ich Sie bitten, das Fenster nochmal zu öffnen?''
+
+``Muss ich dazu die Katalogisierung neu starten?''
+
+``Ja, bitte.''
+
+``OK, wieder da.''
+
+``Sehen sie links vom Kreuz zwei weitere Icons?''
+
+``Das Kreuz zum Schliessen?''
+
+``Ja?''
+
+``Ja, so'n komisches Viereck mit einem dicken Strich oben und eines mit einem dicken Strich unten.''
+
+``Das mit dem dicken Strich oben ist das Icon zum Maximieren.''
+
+``Aha.''
+
+``Würden Sie dort bitte mal drauf klicken?''
+
+``Ja, moment\ldots\ Ahaaaa. Prima, jetzt ist das Fenster gross, vielen Dank! Manchmal ist die EDV ganz schön kompliziert.''
+
+Fünf Minuten später klingelt das Telefon wieder:
+
+``Ja, nochmal MüllerMeierSchulze hier, hatte ich eben mit Ihnen gesprochen?''
+
+``Ja, was kann ich für Sie tun?''
+
+``Die Rahmen vom Fenster sind weg.''
+
+``Was meinen Sie damit?''
+
+``Na, ich habe das Fenster - wie Sie gesagt haben - maximiert, indem ich auf dieses Icon geklickt habe. Jetzt ist der Rahmen rechts weg, mit dem ich das fenster schnell kleiner machen kann.''
+
+\ldots
+
+Da es sich um Nachbesserungen zum ``S--Projekt'' handelt, wird die erfolgreiche Projektleitung mit der Problemlösung betraut. Sie stellt fest, dass die Katalogisierenden es so gewöhnt sind, das Fenster am Rahmen zu vergrössern und zu verkleinern. Maximierung ist keine Lösung, da man dann nicht mehr den Rahmen mit der Maus greifen kann. Man kauft beim Hersteller der Sofware drei Entwicklungstage ein, die dafür genutzt werden, dass das Fenster beim Start die optimale Grösse hat, nicht genau auf dem Rand landet, und auch auf dem 22” Monitor der Geschäftsleitung noch richtig passt. 
+
+Zwei Monate später ist der Hotfix fertig und wird eingespielt. Das Fenster öffnet sich jetzt in der richtigen Grösse, aber leider im Hintergrund. Der Hersteller bessert innerhalb eines weiteren Monats nach.
+
+Die Geschäftsleitung preist in einem Interview die höchst erfolgreiche Zusammenarbeit mit der Firma.
+
+Einen weiteren Monat später gibt es ein ServicePack für die Katalogisierung. Nach der Einspielung stellt man fest, dass das Fenster wieder genau unter dem Rand aufgeht. Leider ist das bei den Test nicht aufgefallen. Ein Incident bei der Herstellerfirma ergibt, dass der Hotfix zur idealen Fenstergrösse leider vergessen wurde. Man würde ihn per CodeInjection nachreichen.
+
+Die Geschäftsleitung preist die professionelle Qualität des Herstellers auf einem Symposium.
+
+Das System wird per CodeInjection repariert, leider kann man sich nun nicht mehr Anmelden, weil das LoginFenster nicht mehr erscheint. Das wird schon drei Tage später von der eigenen IT gefixt --- der Hersteller hat noch nicht auf den neuen Incident reagiert\ldots
+
+\end{document}

@@ -1,0 +1,42 @@
+\usepackage[utf8x]{inputenc}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{courier}
+\usepackage{multicol}
+\usepackage{listings}
+\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\footnotesize\ttfamily}
+\lstset{literate=%
+{Ö}{{\"O}}1
+{Ä}{{\"A}}1
+{Ü}{{\"U}}1
+{ß}{{\ss}}2
+{ä}{{\"a}}1
+{ö}{{\"o}}1
+{ü}{{\"u}}1
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{IT Grundlagen}
+\author{Sven Koesling}
+\institute{ETH--Bibliothek}
+\date{Herbst 2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{ 20151204 20151211 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  \begin{frame}
+  \maketitle
+\end{frame}
+
+\only<article>{\tableofcontents}
+
+\include{20151204}
+\include{20151211}
+\include{20151218}
+\include{20160108}
+
+\end{document}

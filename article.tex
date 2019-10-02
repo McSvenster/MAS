@@ -1,0 +1,28 @@
+\documentclass[german,headsepline]{scrartcl}
+\usepackage{fontspec}
+\usepackage{beamerarticle}
+\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
+\setcounter{secnumdepth}{0}
+\setlength{\parskip}{\bigskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage[manualmark,headsepline]{scrpage2}
+\headheight4cm
+\pagestyle{scrheadings}
+\addtokomafont{sectioning}{\rmfamily} %auch Ueberschriften in Serifenschrift
+\addtokomafont{descriptionlabel}{\rmfamily}
+\usepackage{textcomp}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\makeatother
+\makeatletter
+\lohead{\@title}
+\ohead{\@author, \@date}
+\setjobnamebeamerversion{beamer}
+\input{main.tex}

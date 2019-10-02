@@ -1,0 +1,88 @@
+\documentclass[german,headsepline]{scrartcl}
+\usepackage{beamerarticle}
+\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
+\setcounter{secnumdepth}{0}
+\setlength{\parskip}{\bigskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{graphics}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage[manualmark,headsepline]{scrpage2}
+\headheight4cm
+\pagestyle{scrheadings}
+\addtokomafont{sectioning}{\rmfamily} %auch Ueberschriften in Serifenschrift
+\addtokomafont{descriptionlabel}{\rmfamily}
+\usepackage{textcomp}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\makeatother
+\makeatletter
+\lohead{\@title}
+\ohead{\@author, \@date}
+\setjobnamebeamerversion{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{courier}
+\usepackage{multicol}
+\usepackage{listings}
+\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\footnotesize\ttfamily}
+\lstset{literate=%
+{Ö}{{\"O}}1
+{Ä}{{\"A}}1
+{Ü}{{\"U}}1
+{ß}{{\ss}}2
+{ä}{{\"a}}1
+{ö}{{\"o}}1
+{ü}{{\"u}}1
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Literatur und Links}
+\author{Sven Koesling}
+\institute{ETH--Bibliothek}
+\date{Herbst 2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{ 20151204 20151211 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+{\renewcommand\labelitemi{}
+\subsection{Literatur}
+\begin{itemize}
+  \item Gumm, Heinz-Peter, Sommer, Manfred, and Hesse, Wolfgang:\\
+    \href{http://www.library.ethz.ch/DADS:default_scope:ebi01_prod007595267}{\it Einführung in die Informatik}\\
+    10., Vollst. überarb. Aufl. ed. München: Oldenbourg, 2013. Print.
+  \item Redmond, Eric, and Wilson, Jim:\\
+    \href{http://www.library.ethz.ch/DADS:default_scope:ebi01_prod006803093}{\it Seven Databases in Seven Weeks : A Guide to Modern Databases and the NoSQL Movement}\\
+    Dallas, Texas: Pragmatic Bookshelf, 2012. Print. The Pragmatic Programmers.
+  \item Tate, Bruce:\\
+    \href{http://www.library.ethz.ch/DADS:default_scope:ebi01_prod006317724}{\it Seven Languages in Seven Weeks : A Pragmatic Guide to Learning Programming Languages}\\
+    Dallas: Pragmatic Bookshelf, 2011. Print.
+  \item Abdelhamid, Rames:\\
+    \href{http://www.library.ethz.ch/DADS:default_scope:ebi01_prod001553956}{\it Das Vieweg-LATEX2e-Buch : Eine Praxisorientierte Einführung}\\
+    3., Vollst. überarb. Und Erw. Aufl. ed. Braunschweig [etc.: Vieweg, 1996. Print. Studium Und Ausbildung.
+\end{itemize}
+
+\subsection{Links}
+\begin{itemize}
+  \item \href{http://actu.epfl.ch/news/the-matterhorn-like-you-ve-never-seen-it/}{The Matterhorn like you've never seen it}
+  \item \href{http://www.nmc.org/publication/nmc-horizon-report-2015-library-edition/}{Horizon Report 2015 Library Edition}
+  \item \href{http://blogs.ethz.ch/innovethbib/2015/08/24/horizon-report-2015-library-edition/}{Innovationsblog der ETH-Bibliothek: Horizon Report 2015 Library Edition}
+  \item \href{https://www.youtube.com/watch?v=HgmETqWeFrs}{NEBIS-Verbundtagung/Assemblée annuelle 2015: Keynote Magnus Pfeffer: Cloud Computing}
+\end{itemize}
+
+\textbf{Humoreskes}
+\begin{itemize}
+  \item \href{https://youtu.be/BKorP55Aqvg}{You are an expert}
+  \item \href{https://youtu.be/MAYBhIiB82E}{Kickass Librarian}
+\end{itemize}
+
+\end{document}
