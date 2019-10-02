@@ -1,0 +1,39 @@
+<html>
+  <head> 
+    <title>NEBIS - Bibliothekskatalog</title>
+  </head> 
+ 
+  <body topmargin="0" marginheight="0" onLoad="javascript:setCookie();InitEx();">
+    <table style="margin-top:0.4em" summary="Hauptmenu" width="100%" border="0" cellspacing="0" cellpadding="0"> 
+      <tr class="topbar"> 
+        <td valign="middle" width="120" rowspan="3"> 
+          <a href="http://www.nebis.ch" class="blue" target="_blank" title="Netzwerk von Bibliotheken und Informationsstellen in der Schweiz"> 
+            <img src="http://opac.nebis.ch:80/exlibris/aleph/u23_1/ebi01/www_f_ger/icon/nebis-logo.png" width="91" height="60" border="0" alt="NEBIS logo">
+          </a> 
+        </td> 
+        <td  valign="middle" align="left" nowrap> 
+          <a href="" class="konto">Benutzungskonto</a> | 
+          <a href="" class="black">Einstellungen</a> | 
+          <a href="" class="black">Gef&uuml;hrte&nbsp;Suche</a> | 
+          <a href="" class="black">Hilfe</a> | 
+          <a href="" class="black">Abmelden</a> 
+        </td> 
+        <td valign="middle" align="right" nowrap> 
+          <a href="" class="black">Andere Kataloge</a> 
+        &nbsp; 
+        &nbsp; 
+          <script type="text/javascript"> 
+            if ( window.location.href.indexOf("con") < 0 && window.location.href.indexOf("lng=") < 0 &&  window.location.href.indexOf("CON") < 0  &&  window.location.href.indexOf("LNG=") < 0 &&  window.location.href.indexOf("=") > 0 ) {
+                document.write("<a href="+window.location.href+"&CON_LNG=ENG class=black title=English>E</a> | <a href="+window.location.href+"&CON_LNG=FRE class=black title=Français>F</a>"); 
+            } 
+            else if ( window.location.href.indexOf("=") > 0 ) { 
+              var url_eng=window.location.href.replace(/lng\=GER/i,"LNG\=ENG"); 
+              var url_fre=window.location.href.replace(/lng\=GER/i,"LNG\=FRE"); 
+              document.write("<a href="+url_eng+ " class=black title=English>E</a> | <a href="+url_fre+" class=black title=Français>F</a>"); 
+            }
+          </script> 
+        </td> 
+      </tr> 
+    </table>
+  </body>
+</html>

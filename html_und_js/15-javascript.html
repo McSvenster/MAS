@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Der Hase und der Baum</title>
+
+    <style>
+      h1 { font-family: sans-serif; }
+      table { margin-left: 24px; }
+      td { color: gray; }
+    </style>
+
+  </head>
+  
+  <body>
+
+    <h1>Inhaltsverzeichnis</h1>
+
+    <table>
+      <tr>
+        <th>Kapitel</th><th>Titel</th>
+      </tr>
+      <tr>
+        <td>1</td><td>Der Hase</td>
+      </tr>
+      <tr>
+        <td colspan="2"><a href="#" onclick="verstecken('kapitel2'); return false;">Kapitel 2 verstecken</a></td>
+      </tr>
+      <tr id="kapitel2" style="display: table-row;">
+        <td>2</td><td>In der Werkstatt</td>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      function verstecken(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+    </script>
+
+  </body>
+</html>

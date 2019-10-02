@@ -1,10 +1,10 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[german]{babel}
 \usepackage{float}
-\usepackage{courier}
 \usepackage{multicol}
 \usepackage{listings}
-\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\footnotesize\ttfamily}
+\usepackage{courier}
+\lstset{inputencoding=utf8x, breaklines=true, basicstyle=\ttfamily\scriptsize}
 \lstset{literate=%
 {Ö}{{\"O}}1
 {Ä}{{\"A}}1
@@ -14,13 +14,56 @@
 {ö}{{\"o}}1
 {ü}{{\"u}}1
 }
+\lstdefinelanguage{html}{
+basicstyle=\ttfamily\scriptsize,
+keywords={
+  a,
+  body,
+  charset,
+  div,
+  font,
+  h1,
+  h2,
+  head,
+  href,
+  html,
+  id,
+  img,
+  link,
+  media,
+  meta,
+  p,
+  src,
+  style,
+  table,
+  td,
+  title,
+  tr
+}, 
+keywordstyle=\color{black}\bfseries} 
+\lstdefinelanguage{xml}{
+basicstyle=\ttfamily\scriptsize,
+keywords={
+  creationdate,
+  creator,
+  edition,
+  format,
+  identifier,
+  publisher,
+  recordid,
+  subject,
+  title,
+  type
+}, 
+keywordstyle=\color{black}\bfseries} 
 
-
+\lstdefinelanguage{ruby}{basicstyle=\ttfamily\scriptsize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{IT Grundlagen}
+\title[Grundlagen: Informationstechnologie]{\beta Grundlagen: Informationstechnologie in Bibliotheken \beta}
+\subtitle{\beta Dokument noch in Arbeit \beta}
 \author{Sven Koesling}
 \institute{ETH--Bibliothek}
-\date{Herbst 2015}
+\date{Herbst 2017}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -28,15 +71,17 @@
 % \includeonly{ 20151204 20151211 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-  \begin{frame}
+
+\begin{frame}
   \maketitle
 \end{frame}
 
 \only<article>{\tableofcontents}
 
-\include{20151204}
-\include{20151211}
-\include{20151218}
-\include{20160108}
+\include{20171201}
+\include{20171215}
+\include{20171222}
+\include{20180119}
+\include{literaturliste-2018}
 
 \end{document}

@@ -1,10 +1,25 @@
 \documentclass[german,headsepline]{scrartcl}
 \usepackage{fontspec}
 \usepackage{beamerarticle}
-\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+		unicode=true,
+		pdfusetitle,
+		bookmarks=true,
+		bookmarksnumbered=false,
+		bookmarksopen=false,
+		breaklinks=false,
+		backref=false,
+		% pdfborder={0 0 0},
+    pdfborderstyle={/S/U/W 0.2}, % underline links instead of boxes
+    linkbordercolor=white,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=blue        % color of external links
+}
 \usepackage{geometry}
 \geometry{verbose,tmargin=2mm,bmargin=78mm,lmargin=32mm,rmargin=32mm}
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 \setlength{\parskip}{\bigskipamount}
 \setlength{\parindent}{0pt}
 \usepackage{graphicx}

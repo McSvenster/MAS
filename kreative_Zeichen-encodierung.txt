@@ -1,0 +1,118 @@
+Betreff:  Z39-Schnittstelle der Nationalbank (Z39 von Alma zu Aleph)
+Datum:  Mon, 29 Oct 2018 07:35:35 +0000
+Von:  Leu, Felix <felix.leu@unisg.ch>
+An:   simon.allemann@hbz.uzh.ch <simon.allemann@hbz.uzh.ch>,
+walter.burch@zhbluzern.ch <walter.burch@zhbluzern.ch>,
+voellmin@library.ethz.ch <voellmin@library.ethz.ch>,
+daniel.schmied@zb.uzh.ch <daniel.schmied@zb.uzh.ch>,
+stefan.telli@ub.unibe.ch <stefan.telli@ub.unibe.ch>,
+benjamin.flaemig@zhbluzern.ch <benjamin.flaemig@zhbluzern.ch>,
+sven.koesling@library.ethz.ch <sven.koesling@library.ethz.ch>,
+esther.straub@zb.uzh.ch <esther.straub@zb.uzh.ch>, basil.marti@unibas.ch
+<basil.marti@unibas.ch>, hans.urech@hbz.uzh.ch <hans.urech@hbz.uzh.ch>,
+jeanette.isele@library.ethz.ch <jeanette.isele@library.ethz.ch>
+Kopie (CC):   Tobias.Viegener@nb.admin.ch <Tobias.Viegener@nb.admin.ch>
+
+
+
+Liebe Kolleginnen und Kollegen
+
+ 
+
+Ich habe mich an der letzten KA-Sitzung anerboten, die
+Z39-Gate-Konfiguration für die Nationalbibliothek anzuschauen, damit wir
+vorbereitet sind, wenn unsere KollegInnen in Bern demnächst auf Alma
+wechseln.
+
+ 
+
+Die Alma Z39-Schnittstelle ist gegenüber Aleph stark verschlankt. Es
+kann nur mit folgenden Attributen gesucht werden:
+
+Term (1016, 1017);
+Author (1, 1003, 1004);
+Subject (21);
+Title (4);
+ISBN (7);
+ISSN (8);
+Date (31);
+Identifier (12);
+OCLC Number (1211).
+
+ 
+
+Insbesondere darf die Liste der Aleph-Index-Namen keine Attribute t und
+s haben. Da mir das nicht klar war, endeten meine Suchen anfänglich
+immer mit 0 Treffern.
+
+Die Liste ist sehr kompakt:
+
+find WRD  u=1016
+find WAU  u=1004
+find WTI  u=4
+find WSU  u=21
+find WYR  u=31
+find 020  u=7
+find 022  u=8
+find SYS  u=12
+
+ 
+
+Die Konfigurationsdatei kann kopiert werden von
+
+https://alephtest.unisg.ch/dirlist/alephe/tab/z39_gate/z39_gate_HELVETICAT.conf
+
+ 
+
+*Zeichensatz*
+
+ist ein grösseres Problem.
+
+Alma schickt deutsche Umlaute als \Xc3\Xa4 über die Leitung und diese
+werden als normale UTF8-Zeichen übernommen und in der Aleph-DB gespeichert.
+
+Anders die französischen diakritischen Zeichen wie é oder à. Die kommen
+in der Form e\Xcc\X81  (statt \Xc3\Xa9) und werden dann im Katalogmodul
+als zwei Zeichen e´ oder a` dargestellt. Hingegen kommt die oe-Ligatur
+(coeur) richtig. Das e aigue wird auch in der DB-Tabelle Z00 als e
+gefolgt vom Unicode-Combining-Diacritical "´" (=xCC81
+alias U+0301) abgelegt. Im Web-OPAC oder auch in unserer "Letzten Meile"
+werden die französichen Akzentzeichen korrekt dargestellt.
+
+ 
+
+"It's a feature not a bug" wie das unter
+https://knowledge.exlibrisgroup.com/Aleph/Training/Aleph_Ongoing_Training/Aleph_20.2_-_Combined_Characters_in_the_GUI
+abgelegte Video belegt.
+
+Decomposed characters, wie sie etwa in Thai vorkommen, können
+zusammengefügt werden, indem man in alephcom.ini im Abschnitt [Main]
+folgende Zeile setzt:
+
+CombinedCharSupported=Y
+Dann sind é oder à im Katalogmodul korrekt allerdings ist die oe-Ligatur
+ein Tolggen. In Z00 sind die Zeichen auch nicht so abgelegt, wie ich mir
+das bisher gewohnt bin. Wer CombinedCharSupported einschaltet, sollte
+auch in font.ini Zeilen für EditorFontNew einfügen (analog zu
+EditorFont), mit den Default-Fonts hätte ich nach kürzester Zeit Kopfweh.
+
+ 
+
+Ich werde der HSG nicht empfehlen CombinedCharSupport einzuschalten,
+sondern mit den wenigen französischen CombinedChars zu leben. Tobias
+Viegener hat mir mitgeteilt, dass die NB wegen dieser "composite
+characters" einen Incident bei Exlibris eröffnet hat.
+
+ 
+
+Eine französische Titelaufnahme mit vielen Akzentzeichen und oe-Ligatur
+habe ich bei der Nationalbibliothek gefunden mit der Abfrage "WAU=huber
+caroline and WRD=hochschulschrift".
+
+ 
+
+@Hans: Bitte informiere auch die IDS-Partner (Technies).
+
+Freundliche Grüsse
+
+Felix

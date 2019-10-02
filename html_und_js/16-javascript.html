@@ -1,0 +1,18 @@
+  <tr>
+    <td colspan="2"><a href="#" onclick="einausblenden('kapitel2'); return false;">zeige</a></td>
+  </tr>
+  <tr id="kapitel2" style="display: none;">
+    <td>2</td><td>In der Werkstatt</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  function einausblenden(id) {
+    var meinElement = document.getElementById(id);
+    if (meinElement.style.display === "none") {
+      meinElement.style.display = "table-row";
+    } else {
+      meinElement.style.display = "none";
+    }
+  }
+</script>
